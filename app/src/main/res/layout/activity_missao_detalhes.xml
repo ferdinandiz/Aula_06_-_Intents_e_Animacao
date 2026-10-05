@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/textCabecalho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/briefing_missao"
+                android:textColor="@color/texto_secundario"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageIconeMissao"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:contentDescription="@string/icone_missao"
+                android:src="@drawable/shield" />
+
+            <TextView
+                android:id="@+id/textTituloMissao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textColor="@color/texto_principal"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:text="Missão 1: Infiltração" />
+
+            <TextView
+                android:id="@+id/textAgente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/texto_secundario"
+                android:textSize="16sp"
+                tools:text="Agente: Secreto" />
+
+            <TextView
+                android:id="@+id/textNivelRisco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Nível de risco: ALTO" />
+
+            <TextView
+                android:id="@+id/textPrioridade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_prioridade"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/prioridade_texto"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:text="MISSÃO PRIORITÁRIA"
+                tools:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="@string/briefing"
+                android:textColor="@color/texto_principal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textBriefing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_campo"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:textColor="@color/texto_principal"
+                android:textSize="16sp"
+                tools:text="Entre no complexo sem chamar atenção e recupere os dados." />
+
+            <Button
+                android:id="@+id/buttonIniciar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:enabled="false"
+                android:text="@string/iniciar_missao"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/buttonVoltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/voltar_missoes" />
+
+            <Button
+                android:id="@+id/buttonEncerrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/encerrar_missao" />
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:importantForAccessibility="noHideDescendants">
+
+        <View
+            android:id="@+id/painelEsquerdo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/painel" />
+
+        <View
+            android:id="@+id/painelDireito"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/painel" />
+    </LinearLayout>
+</FrameLayout>

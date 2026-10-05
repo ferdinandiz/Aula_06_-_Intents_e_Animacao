@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/fundo"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imgAgent"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:contentDescription="@string/icone_agente"
+        android:src="@drawable/persona"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/central_missoes"
+        android:textColor="@color/texto_principal"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgAgent" />
+
+    <TextView
+        android:id="@+id/textSubTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textColor="@color/texto_principal"
+        android:textSize="15sp"
+        android:text="@string/identificacao_agente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitulo"/>
+    <EditText
+        android:id="@+id/editCodinome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:autofillHints="username"
+        android:hint="@string/codinome"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:padding="14dp"
+        android:background="@drawable/bg_campo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSubTitulo"/>
+    <EditText
+        android:id="@+id/editCodigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:autofillHints="password"
+        android:hint="@string/codigo_acesso"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:maxLength="8"
+        android:padding="14dp"
+        android:background="@drawable/bg_campo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editCodinome"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchPrioritario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/atendimento_prioritario"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/texto_principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editCodigo"/>
+    <Button
+        android:id="@+id/buttonAcessar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/acessar_central"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchPrioritario"/>
+    <TextView
+        android:id="@+id/textRodape"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

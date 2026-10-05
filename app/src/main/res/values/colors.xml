@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fundo">#F7F8FC</color>
+    <color name="superficie">#FFFFFFFF</color>
+    <color name="texto_principal">#FF1B1B1F</color>
+    <color name="texto_secundario">#FF5F6368</color>
+    <color name="borda">#FFD6D8E1</color>
+    <color name="destaque">#FF3949AB</color>
+    <color name="painel">#FF1F2A44</color>
+    <color name="prioridade_fundo">#FFFFE9A8</color>
+    <color name="prioridade_texto">#FF6B4F00</color>
+    <color name="risco_baixo">#FF2E7D32</color>
+    <color name="risco_medio">#FFF57C00</color>
+    <color name="risco_alto">#FFC62828</color>
+    <color name="risco_desconhecido">#FF616161</color>
+</resources>

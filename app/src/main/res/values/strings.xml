@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Aula 06 - Intents e Animacao</string>
+    <string name="central_missoes">Central de Missões</string>
+    <string name="identificacao_agente">Identificação do Agente</string>
+    <string name="codinome">Codinome</string>
+    <string name="codigo_acesso">Código de acesso</string>
+    <string name="atendimento_prioritario">Missão prioritária</string>
+    <string name="acessar_central">Acessar Central</string>
+    <string name="selecione_missao">Selecione uma missão para receber o briefing:</string>
+    <string name="missao_1">MISSÃO 1: INFILTRAÇÃO</string>
+    <string name="missao_2">MISSÃO 2: EXTRAÇÃO</string>
+    <string name="missao_3">MISSÃO 3: RECONHECIMENTO</string>
+    <string name="voltar">Voltar</string>
+    <string name="briefing_missao">BRIEFING DA MISSÃO</string>
+    <string name="briefing">Briefing</string>
+    <string name="iniciar_missao">Iniciar Missão</string>
+    <string name="voltar_missoes">Voltar para Missões</string>
+    <string name="encerrar_missao">Encerrar Missão e Voltar ao Início</string>
+    <string name="icone_agente">Ícone de agente</string>
+    <string name="icone_missao">Ícone da missão</string>
+</resources>
